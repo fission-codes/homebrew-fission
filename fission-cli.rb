@@ -9,6 +9,7 @@ class FissionCli < Formula
   def install
     bin.install "macos-cli"
     mv bin/"macos-cli", bin/"fission"
+    ohai "Please ensure IPFS is running with: brew services start ipfs"
   end
 
   test do
