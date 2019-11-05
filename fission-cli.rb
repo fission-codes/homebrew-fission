@@ -2,7 +2,7 @@ class FissionCli < Formula
   desc "Deploy live from your laptop, and other web3 tricks for a web2 world"
   homepage "https://fission.codes"
   url "https://github.com/fission-suite/cli/releases/download/1.20.0/macos-cli"
-  sha256 "c5526830ff4dfe20c74b9eb856d92f4026d96f7e88e65a57f2823292048ea404"
+  sha256 "82d4e19211c27dab590f1701b39841a1fbd945fd9670eba9fd9c23000cae8e04"
 
   depends_on "ipfs"
 
