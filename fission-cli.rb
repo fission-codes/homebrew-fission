@@ -1,8 +1,8 @@
 class FissionCli < Formula
   desc "Deploy live from your laptop, and other web3 tricks for a web2 world"
   homepage "https://fission.codes"
-  url "https://github.com/fission-suite/cli/releases/download/1.21.3/macOS-10.14.zip"
-  sha256 "2663207450654ca403fffbef292440c0746b02d2a245e1fe828daca60127ce63"
+  url "https://github.com/fission-suite/cli/releases/download/1.22.0/macOS-10.14.zip"
+  sha256 "ee4bd0404631af6034ba4ed4e95fbfa3a3acd4a76e267641681e8880f4cc248a"
 
   def install
     bin.install "fission-cli-exe"
