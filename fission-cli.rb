@@ -1,13 +1,12 @@
 class FissionCli < Formula
   desc "Deploy & run sites live from your laptop"
   homepage "https://fission.codes"
-  url "https://github.com/fission-suite/fission/releases/download/2.4.2/fission-cli-macos"
-  sha256 "b90cefc8d5bdf5b861ff1e0d96ed10b658b54f7ace488f3ebd247785441287da"
+  url "https://github.com/fission-suite/fission/releases/download/2.9.0/fission-cli-macos"
+  sha256 "a58e526a1013f8c488d122a53c526b33ced282a8a5cd666b312be15f13926c70"
 
   def install
     bin.install "fission-cli-macos"
     mv bin/"fission-cli-macos", bin/"fission"
-    ohai "Please ensure IPFS is running with: brew services start ipfs"
   end
 
   test do
