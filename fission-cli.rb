@@ -1,8 +1,8 @@
 class FissionCli < Formula
   desc "Deploy & run sites live from your laptop"
   homepage "https://fission.codes"
-  url "https://github.com/fission-suite/fission/releases/download/2.9.0/fission-cli-macos"
-  sha256 "a58e526a1013f8c488d122a53c526b33ced282a8a5cd666b312be15f13926c70"
+  url "https://github.com/fission-suite/fission/releases/download/2.9.1.0/fission-macos"
+  sha256 "6878073492f497bde4731cfc8508ca4b4ab2924875d6d6b5eb312d59beb72b7e"
 
   def install
     bin.install "fission-cli-macos"
