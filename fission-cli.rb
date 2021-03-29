@@ -5,8 +5,8 @@ class FissionCli < Formula
   sha256 "67c99b2a9ebbf6edd728a355d7b625b4d0a4e510df2f13b1d50c812825f74402"
 
   def install
-    bin.install "fission-macos"
-    mv bin/"fission-macos", bin/"fission"
+    bin.install "fission-cli-macos"
+    mv bin/"fission-cli-macos", bin/"fission"
   end
 
   test do
