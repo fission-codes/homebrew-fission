@@ -10,7 +10,8 @@ class FissionCli < Formula
   depends_on "openssl"
 
   def install
-    system "stack", "install", "--system-ghc", "--no-install-ghc", "--skip-ghc-check", "--local-bin-path=#{bin}", "fission-cli:fission"
+    system "stack", "install", "--system-ghc", "--no-install-ghc", "--skip-ghc-check", "--local-bin-path=#{bin}",
+      "fission-cli:fission"
   end
 
   test do
