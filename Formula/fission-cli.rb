@@ -9,6 +9,9 @@ class FissionCli < Formula
   depends_on "haskell-stack" => :build
   depends_on "openssl"
 
+  uses_from_macos "ncurses"
+  uses_from_macos "zlib"
+  
   def install
     system "stack", "install", "--system-ghc", "--no-install-ghc", "--skip-ghc-check", "--local-bin-path=#{bin}",
       "fission-cli:fission"
