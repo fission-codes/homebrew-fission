@@ -19,7 +19,7 @@ class FissionCli < Formula
   uses_from_macos "zlib"
 
   def install
-    system "stack", "install", "--system-ghc", "--no-install-ghc", "--skip-ghc-check", "--local-bin-path=#{bin}",
+    system "stack", "install", "--no-nix", "--system-ghc", "--no-install-ghc", "--skip-ghc-check", "--local-bin-path=#{bin}",
       "fission-cli:fission"
 
     (bash_completion/"fission").write `#{bin}/fission --bash-completion-script #{bin}/fission`
