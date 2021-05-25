@@ -1,8 +1,8 @@
 class FissionCli < Formula
   desc "Deploy & run sites live from your laptop"
   homepage "https://fission.codes"
-  url "https://github.com/fission-suite/fission/archive/refs/tags/2.14.0.tar.gz"
-  sha256 "5e1892739939f49a0f7c4379e853fbbbf379d1379cd0ed4100c0bdf85e5299f0"
+  url "https://github.com/fission-suite/fission/archive/refs/tags/2.14.1.tar.gz"
+  sha256 "7a3d2e526aa6b83903463555f84a997d75c22688f377561763967b40d3a76aa1"
   license "AGPL-3.0-or-later"
 
   bottle do
