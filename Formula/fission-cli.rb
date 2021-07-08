@@ -6,9 +6,9 @@ class FissionCli < Formula
   license "AGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/fission-suite/homebrew-fission/releases/download/fission-cli-2.14.2"
-    sha256 cellar: :any,                 catalina:     "6c678fd25cfe73a9d2ed71dd392829b86d3643f48ddd1152c527064763371419"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e0c9553ac3ade0785741540ef76aa43cb3c76a69c25875305d5743648a58220d"
+    root_url "https://github.com/fission-suite/homebrew-fission/releases/download/fission-cli-2.15.0"
+    sha256 cellar: :any,                 catalina:     "b5fd16a0229da926c7ae7dee95243b0cbcd4b0ae6977903782cba173bd3aaa50"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "995368d0c71a91f5b8ef4e42de3b54e4974f9fd9cdf55be7f8aa1fb259993dbe"
   end
 
   depends_on "ghc" => :build
