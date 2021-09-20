@@ -7,8 +7,8 @@ class FissionCli < Formula
 
   bottle do
     root_url "https://github.com/fission-suite/homebrew-fission/releases/download/fission-cli-2.16.1"
-    sha256 cellar: :any,                 catalina:     "1673886b82f3727282632140ce2cd8a22a2eb4403c829a2de002e5c29f4cf1ab"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a5789bb4b6ff51de189cd6b4c98662574567c48512ac03f8750531a08b50e764"
+    sha256 cellar: :any,                 catalina:     "1e054af1885d9fe5b4129fa58bef2faf6a2b302f01dbd7c6bafe4b9e44ad2331"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "30d082f663c29b3d8f6f89c742b802611aadf767be9c09b757beb1e9a21ebb61"
   end
 
   depends_on "ghc" => :build
