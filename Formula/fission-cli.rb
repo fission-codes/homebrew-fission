@@ -1,15 +1,15 @@
 class FissionCli < Formula
   desc "Deploy & run sites live from your laptop"
   homepage "https://fission.codes"
-  url "https://github.com/fission-suite/fission/archive/refs/tags/2.17.2.tar.gz"
-  sha256 "3a40c0326663d8c50b3a05bbf1bafe3a97963193f20aed15a9e12837ebf19e3c"
+  url "https://github.com/fission-suite/fission/archive/refs/tags/2.18.0.tar.gz"
+  sha256 "876cd9e24ae584c283257ffa64504be5d08e20fd1804fb278a1e1c475f6aeed8"
   license "AGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/fission-suite/homebrew-fission/releases/download/fission-cli-2.17.2"
-    sha256 cellar: :any,                 arm64_monterey: "1d149cb72a22c2602a22255f3bce7d1199a9f36c8c4a8ad26761d890bbd66608"
-    sha256 cellar: :any,                 big_sur:        "b05a1495931ef97b38ea9190d1ac888dca6e01c52b8892b9d4db72178203ac2f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "1673155c2fc18f898ae65fff7c0f695a1831138a700ac358863d57ccda5241d9"
+    root_url "https://github.com/fission-suite/homebrew-fission/releases/download/fission-cli-2.18.0"
+    sha256 cellar: :any,                 arm64_monterey: "527972bfe69e2d73aff6ece43101c0187e6d0f05ee844c7e4640c5ac2ee56c6e"
+    sha256 cellar: :any,                 big_sur:        "688022b02f748dce9ecb8132c9b67dc1480f047521339defa4435ae014fa67d9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "4944310619cbcc19bb8ada248d10858bf490ca96c26a3d2b86a4cf937d7c9397"
   end
 
   depends_on "ghc" => :build
