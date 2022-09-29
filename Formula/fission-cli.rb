@@ -12,7 +12,7 @@ class FissionCli < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "4944310619cbcc19bb8ada248d10858bf490ca96c26a3d2b86a4cf937d7c9397"
   end
 
-  depends_on "ghc" => :build
+  depends_on "ghc@8.10" => :build
   depends_on "haskell-stack" => :build
   depends_on "openssl"
 
