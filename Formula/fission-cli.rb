@@ -14,7 +14,7 @@ class FissionCli < Formula
 
   depends_on "ghc@8.10" => :build
   depends_on "haskell-stack" => :build
-  depends_on "openssl"
+  depends_on "openssl@1.1"
 
   uses_from_macos "ncurses"
   uses_from_macos "zlib"
