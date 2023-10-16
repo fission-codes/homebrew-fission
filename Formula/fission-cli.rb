@@ -12,9 +12,9 @@ class FissionCli < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "4944310619cbcc19bb8ada248d10858bf490ca96c26a3d2b86a4cf937d7c9397"
   end
 
-  depends_on "ghc" => :build
+  depends_on "ghc@8.10" => :build
   depends_on "haskell-stack" => :build
-  depends_on "openssl"
+  depends_on "openssl@1.1"
 
   uses_from_macos "ncurses"
   uses_from_macos "zlib"
@@ -23,9 +23,12 @@ class FissionCli < Formula
     system "stack", "install", "--system-ghc", "--no-install-ghc", "--skip-ghc-check", "--local-bin-path=#{bin}",
       "--no-nix", "fission-cli:fission"
 
-    (bash_completion/"fission").write `#{bin}/fission --bash-completion-script #{bin}/fission`
-    (fish_completion/"fission.fish").write `#{bin}/fission --fish-completion-script #{bin}/fission`
-    (zsh_completion/"_fission").write `#{bin}/fission --zsh-completion-script #{bin}/fission`
+    generate_completions_from_executable(bin/"fission", "--bash-completion-script", bin/"fission",
+                                         shells: [:bash], shell_parameter_format: none)
+    generate_completions_from_executable(bin/"fission", "--fish-completion-script", bin/"fission",
+                                         shells: [:fish], shell_parameter_format: none)
+    generate_completions_from_executable(bin/"fission", "--zsh-completion-script", bin/"fission",
+                                         shells: [:zsh], shell_parameter_format: none)
   end
 
   test do
