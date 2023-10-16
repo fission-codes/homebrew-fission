@@ -10,7 +10,7 @@ class Homestar < Formula
 
   depends_on "rust" => :build
   depends_on "ipfs"
-  
+
   def install
     system "cargo", "install", *std_cargo_args(path: "homestar-runtime")
 
