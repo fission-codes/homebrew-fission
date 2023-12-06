@@ -1,9 +1,9 @@
 class Homestar < Formula
   desc "IPVM reference implementation"
   homepage "https://fission.codes/ipvm"
-  url "https://github.com/ipvm-wg/homestar/archive/cca75812fe50b0fe6d911e922223a16b501ebf57.tar.gz"
-  version "0.1.0-1"
-  sha256 "a131062ed8d446e735da22fdb438cff176a448d425876b3a0848782e1f95fa07"
+  url "https://github.com/ipvm-wg/homestar/archive/e7b2debd2fce7665f5cc9647d337fb52aaadac69.tar.gz"
+  version "0.1.0-2"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   license "Apache-2.0"
 
   head "https://github.com/ipvm-wg/homestar.git", branch: "main"
