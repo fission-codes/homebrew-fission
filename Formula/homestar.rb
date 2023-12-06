@@ -3,7 +3,7 @@ class Homestar < Formula
   homepage "https://fission.codes/ipvm"
   url "https://github.com/ipvm-wg/homestar/archive/e7b2debd2fce7665f5cc9647d337fb52aaadac69.tar.gz"
   version "0.1.0-2"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  sha256 "5ef5ed854b1d3d7256f1bd401b99aafe761cd590c36f7b7b8260c6e7a1709fad"
   license "Apache-2.0"
 
   head "https://github.com/ipvm-wg/homestar.git", branch: "main"
