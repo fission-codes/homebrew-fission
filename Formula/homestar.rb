@@ -1,9 +1,8 @@
 class Homestar < Formula
   desc "IPVM reference implementation"
   homepage "https://fission.codes/ipvm"
-  url "https://github.com/ipvm-wg/homestar/archive/e7b2debd2fce7665f5cc9647d337fb52aaadac69.tar.gz"
-  version "0.1.0-2"
-  sha256 "5ef5ed854b1d3d7256f1bd401b99aafe761cd590c36f7b7b8260c6e7a1709fad"
+  url "https://github.com/ipvm-wg/homestar/archive/refs/tags/homestar-runtime-v0.1.1.tar.gz"
+  sha256 "ee5afc5f366020ae2a8b7a2f88a9bba1926add0da558509babc8d1dab536ca07"
   license "Apache-2.0"
 
   head "https://github.com/ipvm-wg/homestar.git", branch: "main"
@@ -35,7 +34,6 @@ class Homestar < Formula
   end
 
   test do
-    # assert_match "homestar #{version}", shell_output("#{bin}/homestar --version")
-    system "#{bin}/homestar", "--version"
+    assert_match "homestar #{version}", shell_output("#{bin}/homestar --version")
   end
 end
