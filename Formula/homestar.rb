@@ -8,9 +8,9 @@ class Homestar < Formula
   head "https://github.com/ipvm-wg/homestar.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/fission-codes/homebrew-fission/releases/download/homestar-0.2.0"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "bf35e30a8e52929fc8daa570f01561b65be03bef86a16dac9e0e52f6e058b131"
-    sha256 cellar: :any_skip_relocation, monterey:      "853f3a08b240482b6b2614898bad8c821cbb9273610412527c449a1080083fce"
+    root_url "https://github.com/fission-codes/homebrew-fission/releases/download/homestar-0.3.0"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "b06b2630bf0e7c0aee717a96ba6a8643248f6803d8023e11c5394fb58a088fe4"
+    sha256 cellar: :any_skip_relocation, monterey:      "91e750000240dcc51151cdc6aeacc7e854badb689a5ed010050dda87cc12c2e4"
   end
 
   depends_on "rust" => :build
