@@ -20,14 +20,11 @@ class Homestar < Formula
 
   def install
     system "cargo", "install", *std_cargo_args(path: "homestar-runtime")
-
-    # sample config
-    (etc/"homestar").install "homestar-runtime/config/settings.toml" => "settings.toml"
   end
 
   # Run as a service
   service do
-    run [opt_bin/"homestar", "start", "--config", etc/"homestar/settings.toml", "--db", var/"homestar.db"]
+    run [opt_bin/"homestar", "start", "--db", var/"homestar.db"]
     keep_alive true
     log_path var/"log/homestar.log"
     error_log_path var/"log/homestar_error.log"
